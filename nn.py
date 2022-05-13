@@ -1,5 +1,3 @@
-import os
-# os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 import generator
 import numpy as np
 import matplotlib.pyplot as plt
