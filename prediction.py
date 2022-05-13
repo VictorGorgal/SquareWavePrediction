@@ -23,7 +23,7 @@ def predict(model, data, future=144):
 
 
 x = np.linspace(0, 72, 144)
-y = generator.generate(freq=4)
+y = generator.generate(freq=2)
 y = y.reshape((1, len(y), 1))
 y2 = np.concatenate((y, y, y))
 
