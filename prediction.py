@@ -1,6 +1,3 @@
-import os
-os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
-
 from keras.models import load_model
 import matplotlib.pyplot as plt
 import generator
