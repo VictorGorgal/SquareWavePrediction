@@ -1,3 +1,6 @@
+import os
+os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
+
 from keras.models import load_model
 import matplotlib.pyplot as plt
 import generator
@@ -33,6 +36,6 @@ y_hat = predict(model, y, future=96)
 
 x2 = np.linspace(24, 72, 96)
 plt.plot(x, y2.flatten(), label='actual')
-plt.plot(x2, y_hat, linestyle=':', c='r', label='predicted')
+plt.plot(x2, y_hat, linestyle=':', c='k', label='predicted')
 plt.legend()
 plt.show()
